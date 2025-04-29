@@ -1,0 +1,438 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #29231F;
+    line-height: 1.8; /* Más separación entre líneas */
+    font-size: 20px; /* Texto más grande general */
+  }
+  
+ /* HEADER */
+ .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* asegurate de que quede por encima del contenido */
+    background: linear-gradient(120deg, #C9D0C6 50%, #BA7865 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    min-height: 140px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* sombra sutil al hacer scroll */
+  }
+  
+  
+  .logo {
+    height: 100px; /* Aumentamos el tamaño */
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05); /* efecto hover suave */
+  }
+  
+  
+  
+  /* HERO */
+  .hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #FFFFFF;
+  }
+  .hero-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* PROFILES */
+  .profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+    background-color: #F5F7F4;
+  }
+  .profile {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .profile-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .profile-text p {
+    font-size: 16px;
+  }
+  
+  /* JOINT PROJECTS */
+  .joint-projects {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    font-size: 18px;
+  }
+  
+  /* REPROCARD SECTION */
+
+  
+
+  .reprocard-section {
+    padding: 60px 40px;
+    background-color: #C9D0C6; /* Gris verdoso */
+    color: #29231F;
+    text-align: center;
+
+  }
+  
+  .reprocard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .reprocard-logo {
+    height: 120px; /* Ahora mucho más grande */
+    margin-bottom: 20px;
+  }
+  
+  .reprocard-section h2 {
+    font-size: 48px; /* Más grande */
+    margin-bottom: 10px;
+    color: #29231F;
+    font-weight: 800;
+  }
+  
+  /* Divider */
+  .reprocard-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #DE5F11; /* Naranja de tu paleta */
+    margin: 20px 0;
+    border-radius: 2px;
+  }
+  
+  .reprocard-description {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 18px;
+  }
+  
+  .reprocard-description p {
+    margin-bottom: 15px;
+  }
+  
+  .reprocard-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+
+    .stat-block {
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 12px;
+        width: 250px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .stat-icon {
+        height: 50px;
+        margin-bottom: 15px;
+      }
+      
+      .stat-block h3 {
+        font-size: 32px;
+        color: #29231F;
+        margin-bottom: 5px;
+      }
+      
+      .stat-block p {
+        font-size: 16px;
+        color: #29231F;
+      }
+      
+  }
+  
+  .stat-block {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  
+  .stat-block h3 {
+    font-size: 32px;
+    color: #29231F;
+  }
+  
+  .stat-block p {
+    font-size: 16px;
+    color: #29231F;
+    margin-top: 10px;
+  }
+  
+  .reprocard-footer {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  
+  /* THE POT CLUB SECTION */
+  .tpc-section {
+    padding: 100px 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    scroll-margin-top: 160px; /* Compensa el header sticky */
+  }
+  
+  /* HEADER */
+  .tpc-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .tpc-logo {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .tpc-section h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #6E312C;
+  }
+  
+  .tpc-divider {
+    width: 80px;
+    height: 4px;
+    background-color: #BA7865;
+    margin: 20px 0;
+    border-radius: 2px;
+  }
+  
+  /* Párrafo destacado inicial */
+  .tpc-highlighted-paragraph {
+    background-color: #F8F4F2; /* Color más suave, estilo houseplant */
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 720px;
+    margin: 0 auto 60px auto;
+    color: #381809;
+    font-size: 22px;
+    line-height: 1.8;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  
+  .tpc-highlighted-paragraph .highlight-light {
+    color: #381809; /* Texto igual que el fondo */
+  }
+  
+  /* Textos */
+  .tpc-description {
+    max-width: 720px;
+    margin: 60px auto;
+    font-size: 20px;
+  }
+  
+  .tpc-description p {
+    margin-bottom: 30px;
+  }
+  
+  /* GALERÍA DE IMÁGENES */
+  .tpc-gallery {
+    margin: 60px auto;
+    max-width: 800px;
+  }
+  
+  .gallery-img-bottom {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05); /* Muy leve sombra */
+  }
+  
+  /* BRANDS */
+  .tpc-brands-wrapper {
+    background-color: #F8F4F2;
+    padding: 80px 20px;
+  }
+  
+  .tpc-brands {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .brand-logo {
+    height: 40px; /* Más pequeño y delicado */
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .brand-logo:hover {
+    opacity: 1; /* Suave hover */
+  }
+  
+  /* Texto destacado */
+  .highlight-dark,
+  .highlight-medium,
+  .highlight-light,
+  .highlight-brand {
+    font-weight: bold;
+  }
+
+  /* FLEX CON TEXTO E IMAGEN */
+.tpc-flex-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 80px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  .tpc-text-block {
+    flex: 1 1 400px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  
+  .tpc-text-block p {
+    margin-bottom: 30px;
+  }
+  
+  .tpc-image-block {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .tpc-side-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  
+  /* DIVISOR LARGO */
+  .tpc-divider-long {
+    width: 100px;
+    height: 4px;
+    background-color: #BA7865;
+    margin: 60px auto;
+    border-radius: 2px;
+  }
+  
+  /* ÚLTIMO PÁRRAFO */
+  .tpc-description {
+    max-width: 800px;
+    margin: 60px auto 40px auto;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  
+  /* GALERÍA */
+  .tpc-gallery {
+    margin: 40px auto;
+    max-width: 800px;
+  }
+  
+  .gallery-img-bottom {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  }
+  
+  /* MARCAS */
+  .tpc-brands-wrapper {
+    background-color: #FFFFFF;
+    padding: 80px 20px;
+  }
+  
+  .tpc-brands {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .brand-logo {
+    height: 60px; /* Ahora más grande */
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+
+  .brand-logo.pulsepro {
+    height: 60px; /* PulsePro sigue más pequeño */
+  }
+    
+  
+  .brand-logo:hover {
+    opacity: 1;
+  }
+  
+  /* Texto destacado */
+  .highlight-dark,
+  .highlight-medium,
+  .highlight-light,
+  .highlight-brand {
+    font-weight: bold;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+  
+  
+  
+  
