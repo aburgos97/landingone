@@ -144,8 +144,94 @@
           <img src="bluelab.png" alt="BlueLab" class="brand-logo">
         </div>
       </div>
-      
 
-  
-  
-  
+
+<!-- DIVISOR ESTÉTICO ENTRE SECCIONES -->
+<div class="athena-divider"></div>
+
+<!-- SECCIÓN ATHENA USO EN CLUB DE CULTIVO - CARRUSEL CON FOCO CENTRAL -->
+<section class="athena-club-section">
+  <div class="athena-club-container">
+    <div class="athena-club-text">
+      <img src="athena.png" alt="Logo Athena" class="athena-logo" />
+      <p>
+        Aplicamos los protocolos de la línea <strong>ATHENA</strong> con precisión, integrando <strong>riego automatizado</strong> y <strong>monitoreo de variables</strong> como pH, EC, VPD y humedad del sustrato. Cada dato es registrado y visualizado para mejorar continuamente el rendimiento.
+      </p>
+      <p>
+        Esta sinergia entre tecnología y nutrición vegetal nos posiciona como socios ideales para representar oficialmente la marca ATHENA en la región.
+      </p>
+    </div>
+
+    <div class="athena-carousel-wrapper">
+      <button class="carousel-btn left" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="athena-carousel">
+        <div class="carousel-track">
+          <img src="cogo.jpeg" class="carousel-img" alt="Sistema de riego Athena" />
+          <img src="nico.jpeg" class="carousel-img" alt="Pantalla de monitoreo" />
+          <img src="sala.jpeg" class="carousel-img" alt="Cultivo en floración" />
+        </div>
+      </div>
+      <button class="carousel-btn right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<script>
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-img');
+const track = document.querySelector('.carousel-track');
+
+function updateCarousel() {
+  const imageWidth = images[0].offsetWidth + 40;
+  const offset = (imageWidth * currentIndex) - ((track.offsetWidth - imageWidth) / 2);
+  track.style.transform = `translateX(-${offset}px)`;
+
+  images.forEach((img, i) => {
+    img.classList.toggle('active', i === currentIndex);
+  });
+}
+
+function moveSlide(direction) {
+  currentIndex += direction;
+  if (currentIndex < 0) currentIndex = images.length - 1;
+  if (currentIndex >= images.length) currentIndex = 0;
+  updateCarousel();
+}
+
+window.addEventListener('load', () => {
+  updateCarousel();
+  window.addEventListener('resize', updateCarousel);
+});
+</script>
+
+
+<!-- SECCIÓN TIENDA ATHENA -->
+<section class="athena-store-section">
+  <div class="athena-store-container">
+    <h2 class="athena-store-title">¿Por qué vender a través de <strong>Reprocard</strong>?</h2>
+    
+    <div class="athena-store-image">
+      <img src="tienda.png" alt="Vista tienda Reprocard" />
+    </div>
+
+    <div class="athena-benefits">
+      <div class="benefit-block">
+        <img src="email.png" alt="Email marketing" />
+        <h3>Mailing de ventas y marketing</h3>
+        <p>Campañas de email a nuestra base de clientes segmentados para impulsar tus productos.</p>
+      </div>
+
+      <div class="benefit-block">
+        <img src="value.png" alt="Value Added Reseller" />
+        <h3>Sinergia con The Pot Club</h3>
+        <p>Juntos potenciamos la distribución como un <strong>Value Added Reseller</strong>.</p>
+      </div>
+
+      <div class="benefit-block">
+        <img src="customer.png" alt="Segmentación de clientes" />
+        <h3>Segmentación específica</h3>
+        <p>Tenemos una base de datos segmentada por comportamiento, región y perfil de consumo.</p>
+      </div>
+    </div>
+  </div>
+</section>
